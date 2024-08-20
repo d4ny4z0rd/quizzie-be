@@ -6,6 +6,8 @@ const verifyJWT = async (req, res, next) => {
 		const token =
 			req.cookies?.accessToken || req.header("Authorization")?.split(" ")[1];
 
+		console.log(token);
+
 		if (!token)
 			return res.status(403).json({
 				message: "Unauthorized request",
