@@ -9,8 +9,8 @@ const analyticRouter = require("./routes/analytic.route");
 const dashboardRouter = require("./routes/dashboard.route");
 
 const corsOptions = {
-	origin: "http://localhost:5173", 
-	credentials: true, 
+	origin: "https://quizzie-fe.vercel.app",
+	credentials: true,
 };
 app.use(cors(corsOptions));
 app.use(express.json());
